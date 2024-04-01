@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lista de Candidatos</title>
+</head>
+<body>
+    <h1>Lista de Candidatos</h1>
+    <ul>
+        {% for candidato in candidatos %}
+            <li>{{ candidato.nombre }} {{ candidato.apellido }} - {{ candidato.ciudad }} - {{ candidato.telefono }} - {{ candidato.dni }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>
